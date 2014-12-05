@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+<head>
+
+</head>
+<body>
+
+	<form id="a" action="c.php" method="post">
+		0<input type="range" id="aralik" min="0" max="10" onchange="updateTextInput(this.value)"/>10
+		<input type="text" id="sonuc">
+		<script type="text/javascript">
+			function updateTextInput(val){
+				document.getElementById('sonuc').value=val;
+			}
+		</script>
+	</form>
+</body>
+</html>
